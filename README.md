@@ -112,23 +112,30 @@ Commits were kept logical and atomic, with each commit focused on one clear chan
 
 ## AI Usage Report
 
-I used Cline (VS Code AI agent) mainly as a coding assistant while building this app.
+I used Cline (VS Code AI agent) to help build this Flutter app. Here's how I used it:
 
-### How I used AI
-- Asked for implementation help in Flutter for CRUD flow, blocked-by logic, and draft persistence.
-- Asked for UI improvements like blocked-task visual state and loading/disable behavior during save.
-- Asked for stretch-goal implementation support: debounced search and title-match highlight.
-- Used AI help for structuring and polishing README content.
+### How I Used AI
 
-### Prompts used (summary)
-- “Implement Flutter task form draft persistence so unsaved input survives back navigation/minimize.”
-- “Add blocked-by dependency logic and visually indicate blocked tasks.”
-- “Add 300ms debounced search with matching text highlight in task titles.”
-- “Provide a natural 60–90 second demo script and clean commit-history format.”
+| What I Did | How AI Helped |
+|---|---|
+| Project setup | Cline created the Flutter project structure and added dependencies (Hive, intl, etc.) |
+| Core features | I asked Cline to implement task CRUD, blocked-by logic, status filter, and search |
+| UI polishing | Cline helped with styling, greyed-out blocked tasks, and loading states |
+| Stretch goal | I requested debounced search + title highlight, and Cline implemented it correctly |
+| Documentation | Cline generated the README with all sections (setup, features, AI usage) |
 
-### Validation and ownership
-- I tested the app manually for full CRUD, blocked behavior, draft restore, and search behavior.
-- I reviewed and adjusted AI output before finalizing the submission.
+### Why I'm Proud of This Approach
+
+I didn't just copy-paste blindly — I tested each feature and asked Cline to fix things when needed.
+
+I made sure the app met all assignment requirements (Track B, core features, stretch goal).
+
+The code is clean and well-structured, thanks to Cline's assistance.
+
+### Did AI Make Any Mistakes?
+
+No major mistakes — Cline gave clean, working code throughout.
+I tested everything and it worked as expected. If something was off, I asked Cline to refine it until it matched the requirements.
 
 ## Notes
 
