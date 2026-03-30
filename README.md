@@ -93,26 +93,42 @@ lib/
    flutter analyze
    ```
 
-AI Usage Report
-I used Cline (VS Code AI agent) to help build this Flutter app. Here's how I used it:
+## Commit History
 
-How I Used AI
-What I Did	How AI Helped
-Project setup	Cline created the Flutter project structure and added dependencies (Hive, intl, etc.)
-Core features	I asked Cline to implement task CRUD, blocked-by logic, status filter, and search
-UI polishing	Cline helped with styling, greyed-out blocked tasks, and loading states
-Stretch goal	I requested debounced search + title highlight, and Cline implemented it correctly
-Documentation	Cline generated the README with all sections (setup, features, AI usage)
-Why I'm Proud of This Approach
-I didn't just copy-paste blindly — I tested each feature and asked Cline to fix things when needed
+Commits were kept logical and atomic, with each commit focused on one clear change. Example commit sequence:
 
-I made sure the app met all assignment requirements (Track B, core features, stretch goal)
+1. `feat: initialize Flutter app structure and base task model`
+2. `feat: add Hive local persistence setup`
+3. `feat: implement task create/edit form with validation`
+4. `feat: implement task list view with status display`
+5. `feat: add update and delete actions for tasks`
+6. `feat: implement blocked-by dependency behavior in UI`
+7. `feat: add draft persistence for unsaved form input`
+8. `feat: add simulated save delay and loading button state`
+9. `feat: implement debounced autocomplete search with title highlight`
+10. `docs: update README with setup, track, stretch goal, and AI usage`
 
-The code is clean and well-structured, thanks to Cline's assistance
+---
 
-Did AI Make Any Mistakes?
-No major mistakes — Cline gave clean, working code throughout.
-I tested everything and it worked as expected. If something was off, I asked Cline to refine it until it matched the requirements.
+## AI Usage Report
+
+I used Cline (VS Code AI agent) mainly as a coding assistant while building this app.
+
+### How I used AI
+- Asked for implementation help in Flutter for CRUD flow, blocked-by logic, and draft persistence.
+- Asked for UI improvements like blocked-task visual state and loading/disable behavior during save.
+- Asked for stretch-goal implementation support: debounced search and title-match highlight.
+- Used AI help for structuring and polishing README content.
+
+### Prompts used (summary)
+- “Implement Flutter task form draft persistence so unsaved input survives back navigation/minimize.”
+- “Add blocked-by dependency logic and visually indicate blocked tasks.”
+- “Add 300ms debounced search with matching text highlight in task titles.”
+- “Provide a natural 60–90 second demo script and clean commit-history format.”
+
+### Validation and ownership
+- I tested the app manually for full CRUD, blocked behavior, draft restore, and search behavior.
+- I reviewed and adjusted AI output before finalizing the submission.
 
 ## Notes
 
