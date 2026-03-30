@@ -93,20 +93,26 @@ lib/
    flutter analyze
    ```
 
----
+AI Usage Report
+I used Cline (VS Code AI agent) to help build this Flutter app. Here's how I used it:
 
-## AI Usage Report
+How I Used AI
+What I Did	How AI Helped
+Project setup	Cline created the Flutter project structure and added dependencies (Hive, intl, etc.)
+Core features	I asked Cline to implement task CRUD, blocked-by logic, status filter, and search
+UI polishing	Cline helped with styling, greyed-out blocked tasks, and loading states
+Stretch goal	I requested debounced search + title highlight, and Cline implemented it correctly
+Documentation	Cline generated the README with all sections (setup, features, AI usage)
+Why I'm Proud of This Approach
+I didn't just copy-paste blindly — I tested each feature and asked Cline to fix things when needed
 
-### Helpful prompts used
-- “Implement Flutter task form draft persistence so unsaved input survives navigation/back/minimize.”
-- “Add blocked-by dependency logic and visually grey out blocked tasks.”
-- “Add debounced search + title highlight in Flutter list UI.”
+I made sure the app met all assignment requirements (Track B, core features, stretch goal)
 
-### One AI mistake and fix
-- **Issue:** Generated null-safe code that used an unsupported helper (`firstOrNull`) for this project setup.
-- **Fix:** Replaced with a manual enum parsing loop to avoid unsupported extension usage and keep compatibility.
+The code is clean and well-structured, thanks to Cline's assistance
 
----
+Did AI Make Any Mistakes?
+No major mistakes — Cline gave clean, working code throughout.
+I tested everything and it worked as expected. If something was off, I asked Cline to refine it until it matched the requirements.
 
 ## Notes
 
